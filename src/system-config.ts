@@ -7,7 +7,10 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  '@angular2-material':         'vendor/@angular2-material'
+  '@angular2-material':         'vendor/@angular2-material',
+  'moment':                     'vendor/moment/moment.js',
+  'underscore':                 'vendor/underscore/underscore.js',
+  'three':                      'vendor/three/three.js'
   // "ng2-dropdown":               "vendor/ng2-dropdown",
   // 'angular2-busy':              "vendor/angular2-busy/build/src",
   // 'angular2-google-maps':       "vendor/angular2-google-maps",
@@ -16,6 +19,19 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
+  'moment': {
+    format: 'cjs'
+  },
+  'underscore':{
+    format: 'cjs'
+    // defaultExtension: 'js',
+    // main: 'underscore.js'
+  },
+  'three': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'three.js'
+  }
   // "ng2-dropdown":               { main: "index.js", defaultExtension: "js" },
   // 'angular2-busy':              { main: "index.js", defaultExtension: "js" },
   // 'angular2-google-maps/core':       { main: "index.js", defaultExtension: "js" }
@@ -30,6 +46,14 @@ const materialPkgs:string[] = [
   'list',
   'card',
   'input',
+  'checkbox',
+  'grid-list',
+  'memu',
+  'radio',
+  'progress-bar',
+  'progress-circle',
+  'slide-toggle',
+  'tabs'
 ];
 
 materialPkgs.forEach((pkg) => {
@@ -57,6 +81,8 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/threejs-periodic/threejs-periodic',
+  'app/three-periodic',
   /** @cli-barrel */
 ];
 

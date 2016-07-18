@@ -14,18 +14,23 @@
 <body>
   <app-root>Loading...</app-root>
 
-  
+
 
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
     {{/each}}
+
+    <script src="vendor/three/three.js"></script>
+    <script src="assets/js/tween.min.js"></script>
+    <script src="assets/js/TrackballControls.js"></script>
+    <script src="assets/js/CSS3DRenderer.js"></script>
     <script>
       System.import('system-config.js').then(function () {
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
 
-  
+
 
 </body>
 </html>

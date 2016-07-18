@@ -1,5 +1,7 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 import { LineIntersectionComponent } from './line-intersection/line-intersection.component';
+import { FractalComponent } from './fractal/fractal.component';
+import { ThreePeriodicComponent } from './three-periodic/three-periodic.component'
 
 // Route config let's you map routes to components
 const routes: RouterConfig = [
@@ -7,6 +9,14 @@ const routes: RouterConfig = [
   {
     path: 'line-intersection',
     component: LineIntersectionComponent,
+  },
+  {
+    path: 'fractal',
+    component: FractalComponent
+  },
+  {
+    path: 'three-periodic',
+    component: ThreePeriodicComponent
   }
   // // map '/persons/:id' to person details component
   // {
