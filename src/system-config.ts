@@ -83,6 +83,7 @@ const barrels: string[] = [
   'app/shared',
   'app/threejs-periodic/threejs-periodic',
   'app/three-periodic',
+  'app/template',
   /** @cli-barrel */
 ];
 
