@@ -1,10 +1,4 @@
-<!--<h1>-->
-  <!--{{title}}-->
-<!--</h1>-->
 
-<div class='container'>
-  <router-outlet></router-outlet>
-</div>
 <md-sidenav-layout fullscreen>
   <md-sidenav #sidenav>
     <md-nav-list>
@@ -12,6 +6,7 @@
       <a md-list-item [routerLink]="['/line-intersection']" (click)="sidenav.close()">LineIntersection</a>
       <a md-list-item [routerLink]="['/fractal']" (click)="sidenav.close()">Fractal</a>
       <a md-list-item [routerLink]="['/three-periodic']" (click)="sidenav.close()">Periodic</a>
+      <a md-list-item [routerLink]="['/todo']" (click)="sidenav.close()">Todo</a>
       <!--<a md-list-item [routerLink]="['Fractal']" (click)="sidenav.close()">Fractal</a>-->
       <!--<a md-list-item [routerLink]="['ThreePeriodic']" (click)="sidenav.close()">Periodic</a>-->
       <!--<a md-list-item [routerLink]="['Matrix']" (click)="sidenav.close()">Matrix</a>-->
@@ -27,14 +22,231 @@
   </md-sidenav>
 
   <md-toolbar color="primary">
-    <button md-raised-button (click)="sidenav.toggle()">
+    <button md-primary-button (click)="sidenav.toggle()">
       <i class="material-icons">menu</i>
     </button>
   </md-toolbar>
 
   <div class="app-content">
-    Main content panel
+    <!--Main content panel-->
     <router-outlet></router-outlet>
   </div>
 
+  <app-backtotop position="200"></app-backtotop>
 </md-sidenav-layout>
+
+
+<!--<div class="wrapper">-->
+  <!--<h1>Responsive Layout Example</h1>-->
+  <!--<header>HEADER</header>-->
+  <!--<nav>NAV</nav>-->
+  <!--<section>SECTION</section>-->
+<!--</div>-->
+
+<!--<div style="position: relative;">-->
+  <!--<div id="pagewrap">-->
+
+    <!--<header>-->
+      <!--<h1>3 Column Responsive Layout</h1>-->
+    <!--</header>-->
+
+    <!--<section id="content">-->
+      <!--<h2>1st Content Area</h2>-->
+      <!--<p>This page demonstrates a 3 column responsive layout, complete with responsive images and jquery slideshow.</p>-->
+    <!--</section>-->
+
+    <!--<section id="middle">-->
+      <!--<h2>2nd Content Area</h2>-->
+      <!--<p>At full width all three columns will be displayed side by side. As the page is resized the third column will collapse under the first and second. At the smallest screen size all three columns will be stacked on top of one another.</p>-->
+      <!--<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>-->
+    <!--</section>-->
+
+    <!--<aside id="sidebar">-->
+      <!--<h2>3rd Content Area</h2>-->
+      <!--<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+      <!--<p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>-->
+    <!--</aside>-->
+
+    <!--<footer>-->
+      <!--<h4>Footer</h4>-->
+      <!--<p>Footer text</p>-->
+    <!--</footer>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+<!--<div class="">-->
+  <!--<div class="container body">-->
+    <!--<div class="main_container">-->
+      <!--<div class="col-md-3 left_col">-->
+        <!--<div class="left_col scroll-view">-->
+          <!--<div class="navbar nav_title" style="border: 0;">-->
+            <!--<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>INTELLIM</span></a>-->
+          <!--</div>-->
+
+          <!--<div class="clearfix"></div>-->
+
+          <!--<br />-->
+
+          <!--&lt;!&ndash; sidebar menu &ndash;&gt;-->
+          <!--<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">-->
+
+            <!--<div class="menu_section">-->
+              <!--<h3>Views</h3>-->
+              <!--<ul class="nav side-menu">-->
+                <!--<li><a><i class="fa fa-home"></i> Events <span class="fa fa-chevron-down"></span></a>-->
+                  <!--<ul class="nav child_menu">-->
+                    <!--<li><a href="javascript: void(0)">Events</a></li>-->
+                    <!--<li><a href="javascript: void(0)">Muster</a></li>-->
+                    <!--<li><a href="javascript: void(0)">Event History</a></li>-->
+                  <!--</ul>-->
+                <!--</li>-->
+
+
+                <!--<li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>-->
+                  <!--<ul class="nav child_menu">-->
+
+                    <!--<li><a href="#level1_1">Events<span class="fa fa-chevron-down"></span></a>-->
+                      <!--<ul class="nav child_menu">-->
+                        <!--<li class="sub_menu"><a href="level2.html">Pause Events</a>-->
+                        <!--</li>-->
+                        <!--<li><a href="#level2_1">Track Last Event</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;<li><a href="#level2_2">Level Two</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                      <!--</ul>-->
+                    <!--</li>-->
+
+                    <!--<li><a>Muster<span class="fa fa-chevron-down"></span></a>-->
+                      <!--<ul class="nav child_menu">-->
+                        <!--<li class="sub_menu"><a href="level2.html">View Person</a>-->
+                        <!--</li>-->
+                        <!--<li><a href="#level2_1">Remove from zone</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;<li><a href="#level2_2">Level Two</a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                      <!--</ul>-->
+                    <!--</li>-->
+
+                    <!--<li><a href="#level1_2">Event History</a>-->
+                    <!--</li>-->
+
+                  <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li><a href="#level1_1"><i class="fa fa-home"></i> Event History</a>-->
+                  <!--<ul class="nav child_menu">-->
+                    <!--<li class="sub_menu"><a href="level2.html">Pause Events</a>-->
+                    <!--</li>-->
+                    <!--<li><a href="#level2_1">Track Last Event</a>-->
+                    <!--</li>-->
+                  <!--</ul>-->
+                <!--</li>-->
+
+              <!--</ul>-->
+            <!--</div>-->
+
+            <!--<div class="sidebar-border" style=""></div>-->
+
+            <!--<div class="menu_section">-->
+              <!--<h3>Actions</h3>-->
+              <!--<ul class="nav side-menu">-->
+                <!--&lt;!&ndash;<li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<ul class="nav child_menu">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<li><a href="e_commerce.html">E-commerce</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<li><a href="projects.html">Projects</a></li>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--<li><a><i class="fa fa-bug"></i> Events</a>-->
+
+                <!--</li>-->
+                <!--<li><a><i class="fa fa-bug"></i> Muster</a>-->
+
+                <!--</li>-->
+                <!--<li><a><i class="fa fa-bug"></i>Event history</a>-->
+
+                <!--</li>-->
+              <!--</ul>-->
+            <!--</div>-->
+
+          <!--</div>-->
+        <!--</div>-->
+
+      <!--</div>-->
+
+      <!--&lt;!&ndash; top navigation &ndash;&gt;-->
+      <!--<div class="top_nav">-->
+        <!--<div class="nav_menu">-->
+          <!--<nav>-->
+            <!--<div class="nav toggle">-->
+              <!--<a id="menu_toggle" (click)="toggle()"><i class="fa fa-bars"></i></a>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash;<span role="presentation" class="active"><a href="#">Events</a></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span role="presentation"><a href="#">Schedules</a></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span role="presentation"><a href="#">Groups</a></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span role="presentation"><a href="#">Rules</a></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span role="presentation"><a href="#">Video</a></span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span role="presentation"><a href="#">Settings</a></span>&ndash;&gt;-->
+
+
+            <!--<ul class="nav navbar-nav navbar-right">-->
+              <!--<li role="presentation" class="active"><a href="#">Events</a></li>-->
+              <!--<li role="presentation"><a href="#">Schedules</a></li>-->
+              <!--<li role="presentation"><a href="#">Groups</a></li>-->
+              <!--<li role="presentation"><a href="#">Rules</a></li>-->
+              <!--<li role="presentation"><a href="#">Video</a></li>-->
+              <!--<li role="presentation"><a href="#">Settings</a></li>-->
+            <!--</ul>-->
+
+            <!--&lt;!&ndash;<ul class="nav navbar navbar-left">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;<i class="fa fa-envelope-o"></i>&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;Events&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;<span class="badge bg-green">6</span>&ndash;&gt;&ndash;&gt;-->
+                  <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                  <!--&lt;!&ndash;Schedules&ndash;&gt;-->
+                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                  <!--&lt;!&ndash;Groups&ndash;&gt;-->
+                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                  <!--&lt;!&ndash;Rules&ndash;&gt;-->
+                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                  <!--&lt;!&ndash;Video&ndash;&gt;-->
+                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;<li role="presentation" class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">&ndash;&gt;-->
+                  <!--&lt;!&ndash;Settings&ndash;&gt;-->
+                <!--&lt;!&ndash;</a>&ndash;&gt;-->
+              <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+          <!--</nav>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="right_col" role="main">-->
+        <!--<button class="btn btn-primary" (click)="toggle()">Toggle</button>-->
+      <!--</div>-->
+
+      <!--<footer>-->
+
+      <!--</footer>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->

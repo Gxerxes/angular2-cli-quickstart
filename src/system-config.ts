@@ -10,7 +10,9 @@ const map: any = {
   '@angular2-material':         'vendor/@angular2-material',
   'moment':                     'vendor/moment/moment.js',
   'underscore':                 'vendor/underscore/underscore.js',
-  'three':                      'vendor/three/three.js'
+  'three':                      'vendor/three/three.js',
+  'lodash':                     'vendor/lodash/lodash.js',
+  'ng2-bootstrap':              'vendor/ng2-bootstrap'
   // "ng2-dropdown":               "vendor/ng2-dropdown",
   // 'angular2-busy':              "vendor/angular2-busy/build/src",
   // 'angular2-google-maps':       "vendor/angular2-google-maps",
@@ -27,10 +29,18 @@ const packages: any = {
     // defaultExtension: 'js',
     // main: 'underscore.js'
   },
+  'ng2-bootstrap': {
+    defaultExtension: 'js'
+  },
   'three': {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'three.js'
+  },
+  'vendor/lodash': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'lodash.js'
   }
   // "ng2-dropdown":               { main: "index.js", defaultExtension: "js" },
   // 'angular2-busy':              { main: "index.js", defaultExtension: "js" },
@@ -84,6 +94,13 @@ const barrels: string[] = [
   'app/threejs-periodic/threejs-periodic',
   'app/three-periodic',
   'app/template',
+  'app/todo',
+  'app/todo1',
+  'app/todo2',
+  'app/comps/sliderpanel',
+  'app/comps/backtotop',
+  'app/comps/ba-card',
+  'app/comps/popularapp',
   /** @cli-barrel */
 ];
 

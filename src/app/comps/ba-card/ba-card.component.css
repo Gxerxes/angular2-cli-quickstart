@@ -1,0 +1,111 @@
+.card.card-blur {
+  background: url("assets/img/blur-bg-blurred.jpg");
+  transition: none;
+  background-attachment: fixed; }
+  .card.card-blur .card-header, .card.card-blur .card-footer {
+    background: transparent; }
+
+.card {
+  color: #292929;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 24px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25); }
+  .card ::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em; }
+  .card ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer; }
+  .card ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.7); }
+  .card body {
+    scrollbar-face-color: rgba(0, 0, 0, 0.6);
+    scrollbar-track-color: rgba(255, 255, 255, 0.7); }
+  .card.animated {
+    animation-duration: 0.5s; }
+  .card.small-card {
+    height: 114px; }
+  .card.xsmall-card {
+    height: 187px; }
+  .card.medium-card {
+    height: 400px; }
+  .card.xmedium-card {
+    height: 550px; }
+  .card.large-card {
+    height: 974px; }
+  .card.viewport100 {
+    height: calc(100vh - 218px); }
+  .card.with-scroll .card-body {
+    height: calc(100% - 44px);
+    overflow-y: auto; }
+
+.card > .card-body {
+  padding: 15px 22px;
+  height: 100%; }
+.card > .card-header {
+  color: #292929;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.card > .card-footer {
+  color: #292929; }
+
+.card-header, .card-footer {
+  color: #292929;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  height: 44px;
+  font-size: 16px;
+  padding: 0 22px;
+  background-color: #ffffff; }
+
+.card-title {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  color: #292929; }
+
+.card-primary > .card-header {
+  background-color: #4db1a7;
+  border-color: #4db1a7; }
+
+.card-success > .card-header {
+  background-color: #a6c733;
+  border-color: #a6c733; }
+
+.card-info > .card-header {
+  background-color: #57bdda;
+  border-color: #57bdda; }
+
+.card-warning > .card-header {
+  background-color: #e5c649;
+  border-color: #e5c649; }
+
+.card-danger > .card-header {
+  background-color: #ed7878;
+  border-color: #ed7878; }
+
+.accordion-card.card.card-primary .card-header p, .accordion-card.card.card-primary .card-header div, .accordion-card.card.card-primary .card-header span, .accordion-card.card.card-success .card-header p, .accordion-card.card.card-success .card-header div, .accordion-card.card.card-success .card-header span, .accordion-card.card.card-info .card-header p, .accordion-card.card.card-info .card-header div, .accordion-card.card.card-info .card-header span, .accordion-card.card.card-warning .card-header p, .accordion-card.card.card-warning .card-header div, .accordion-card.card.card-warning .card-header span, .accordion-card.card.card-danger .card-header p, .accordion-card.card.card-danger .card-header div, .accordion-card.card.card-danger .card-header span {
+  color: rgba(255, 255, 255, 0.8); }
+
+.card-group .card.accordion-card .card-header {
+  border-bottom: 0; }
+
+.card-group .card .card-header {
+  border-bottom: 1px solid #ddd; }
+
+.p-with-code {
+  line-height: 1.5em; }
+
+.contextual-example-card {
+  height: 120px; }
+
+.footer-card {
+  height: 142px; }
+
+.light-text {
+  font-weight: 300; }
+
+/*# sourceMappingURL=ba-card.component.css.map */

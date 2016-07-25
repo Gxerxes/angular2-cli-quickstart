@@ -69,3 +69,18 @@ md-sidenav {
 a {
   text-decoration: none;
 }
+
+.todo-sidebar{
+  width: 300px;
+  display: inline;
+  height: 100%;
+  float: left;
+}
+
+.todo-content {
+  position: fixed;
+  display: inline;
+  float: left;
+  height: 100%;
+}
+

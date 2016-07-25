@@ -18,6 +18,12 @@ export class ThreePeriodicComponent implements OnInit {
 
   ngOnInit() {
 
+    // SystemJS.import('../../vendor/three/three.js').then(comp => {
+    //
+    // }).catch(function (err) {
+    //   console.log(err)
+    // });
+
     SystemJS.import('../../assets/js/css3d_periodictable.js').then(comp => {
       console.log(comp);
       comp.init();

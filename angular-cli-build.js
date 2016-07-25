@@ -19,7 +19,14 @@ module.exports = function(defaults) {
       '@angular2-material/**/*.js',
       'moment/moment.js',
       'underscore/underscore.js',
-      'three/three.js'
+      'three/three.js',
+      'lodash/lodash.js',
+      'bootstrap/dist/**/*',
+      'ng2-bootstrap/**/*',
+      'font-awesome/**/*',
+      'jquery/dist/*',
+      'jquery-browserify/lib/jquery.js',
+      'jquery.avgrund/jquery.avgrund.js'
     ]
   });
 };

@@ -1,13 +1,18 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {BaCardComponent} from "../comps/ba-card/ba-card.component";
+import {PopularappComponent} from "../comps/popularapp/popularapp.component";
 
-/// <reference path="../../../typings/globals/underscore/index.d.ts" />
-declare var _: any;
+// /// <reference path="../../../typings/globals/underscore/index.d.ts" />
+// declare var _: any;
 
 // import * as _ from 'underscore';
 
+// import * as _ from 'lodash';
+
 @Component({
   selector: 'my-app-line-intersection',
-  templateUrl: 'app/line-intersection/line-intersection.component.html'
+  templateUrl: 'app/line-intersection/line-intersection.component.html',
+  directives: [BaCardComponent, PopularappComponent]
 })
 export class LineIntersectionComponent implements OnInit, AfterViewInit {
   context: CanvasRenderingContext2D;
