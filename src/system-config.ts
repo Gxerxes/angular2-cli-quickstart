@@ -11,7 +11,7 @@ const map: any = {
   'moment':                     'vendor/moment/moment.js',
   'underscore':                 'vendor/underscore/underscore.js',
   'three':                      'vendor/three/three.js',
-  'lodash':                     'vendor/lodash/lodash.js',
+  'lodash':                     'vendor/lodash',
   'ng2-bootstrap':              'vendor/ng2-bootstrap'
   // "ng2-dropdown":               "vendor/ng2-dropdown",
   // 'angular2-busy':              "vendor/angular2-busy/build/src",
@@ -37,10 +37,10 @@ const packages: any = {
     defaultExtension: 'js',
     main: 'three.js'
   },
-  'vendor/lodash': {
+  'lodash': {
     format: 'cjs',
     defaultExtension: 'js',
-    main: 'lodash.js'
+    main: 'index.js'
   }
   // "ng2-dropdown":               { main: "index.js", defaultExtension: "js" },
   // 'angular2-busy':              { main: "index.js", defaultExtension: "js" },

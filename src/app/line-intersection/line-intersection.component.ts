@@ -7,6 +7,7 @@ import {PopularappComponent} from "../comps/popularapp/popularapp.component";
 
 // import * as _ from 'underscore';
 
+// ///<reference path="../../../typings/lodash/lodash.d.ts" />
 // import * as _ from 'lodash';
 
 @Component({
