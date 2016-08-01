@@ -27,7 +27,10 @@ module.exports = function(defaults) {
       'font-awesome/**/*',
       'jquery/dist/*',
       'jquery-browserify/lib/jquery.js',
-      'jquery.avgrund/jquery.avgrund.js'
+      'jquery.avgrund/jquery.avgrund.js',
+      // below are the AngularFire entries
+      'angularfire2/**/*.js',
+      'firebase/*.js'
     ]
   });
 };

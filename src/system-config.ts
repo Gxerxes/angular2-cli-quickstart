@@ -12,7 +12,9 @@ const map: any = {
   'underscore':                 'vendor/underscore/underscore.js',
   'three':                      'vendor/three/three.js',
   'lodash':                     'vendor/lodash',
-  'ng2-bootstrap':              'vendor/ng2-bootstrap'
+  'ng2-bootstrap':              'vendor/ng2-bootstrap',
+  'firebase':                   'vendor/firebase/firebase.js',
+  'angularfire2':               'vendor/angularfire2'
   // "ng2-dropdown":               "vendor/ng2-dropdown",
   // 'angular2-busy':              "vendor/angular2-busy/build/src",
   // 'angular2-google-maps':       "vendor/angular2-google-maps",
@@ -41,6 +43,10 @@ const packages: any = {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'index.js'
+  },
+  'angularfire2': {
+    defaultExtension: 'js',
+    main: 'angularfire2.js'
   }
   // "ng2-dropdown":               { main: "index.js", defaultExtension: "js" },
   // 'angular2-busy':              { main: "index.js", defaultExtension: "js" },

@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import {BaCardComponent} from "../comps/ba-card/ba-card.component";
 import {PopularappComponent} from "../comps/popularapp/popularapp.component";
+import {FIREBASE_PROVIDERS, FirebaseListObservable } from "angularfire2/angularfire2";
+
 
 // /// <reference path="../../../typings/globals/underscore/index.d.ts" />
 // declare var _: any;
@@ -24,8 +26,12 @@ export class LineIntersectionComponent implements OnInit, AfterViewInit {
   offset: any;
   speed: any;
   angle: any;
+  items: FirebaseListObservable<any[]>;
 
   @ViewChild("myCanvas") myCanvas: ElementRef;
+
+  constructor() {
+  }
 
   ngOnInit() {
 
