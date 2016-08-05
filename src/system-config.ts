@@ -107,6 +107,7 @@ const barrels: string[] = [
   'app/comps/backtotop',
   'app/comps/ba-card',
   'app/comps/popularapp',
+  'app/kendo',
   /** @cli-barrel */
 ];
 
