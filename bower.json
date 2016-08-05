@@ -1,0 +1,22 @@
+{
+  "name": "angular2-cli-quickstart",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Gxerxes <xuninglee@163.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Gxerxes/angular2-cli-quickstart",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "Framework7": "framework7#^1.4.2",
+    "kendo-ui": "kendo-ui-core#^2016.2.727"
+  }
+}

@@ -31,3 +31,23 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+src/app/app.component.js
+src/app/app.component.js.map
+src/app/app.routes.js
+src/app/app.routes.js.map
+src/app/comps/
+src/app/environment.js
+src/app/environment.js.map
+src/app/fractal/
+src/app/index.js
+src/app/index.js.map
+src/app/kendo/
+src/app/line-intersection/
+src/app/three-periodic/
+src/app/todo/
+src/app/todo1/
+src/app/todo2/
+src/main.js
+src/main.js.map
+src/system-config.js
+src/system-config.js.map
